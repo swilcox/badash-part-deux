@@ -1,0 +1,32 @@
+[project]
+name = "badash-part-deux"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "swilcox", email = "steven@wilcoxzone.com" }
+]
+dependencies = [
+    "fastapi>=0.104.0",
+    "uvicorn[standard]>=0.23.2",
+    "sqlmodel>=0.0.9",
+    "asyncpg>=0.28.0",
+    "itsdangerous>=2.1.2",
+    "psycopg2-binary>=2.9.9",
+    "greenlet>=3.0.0",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev_dependencies = []
+dev-dependencies = [
+    "ipython>=8.12.3",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
